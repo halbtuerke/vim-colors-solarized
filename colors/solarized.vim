@@ -244,10 +244,14 @@ if (has("gui_running") && g:solarized_degrade == 0)
     let s:vmode       = "gui"
     let s:base03      = "#002b36"
     let s:base02      = "#073642"
-    let s:base01      = "#586e75"
+    " Patrick: Darker base color
+    " let s:base01      = "#586e75"
+    let s:base01      = "#273336"
     let s:base00      = "#657b83"
     let s:base0       = "#839496"
-    let s:base1       = "#93a1a1"
+    " Patrick: Lighter base color
+    " let s:base1       = "#93a1a1"
+    let s:base1       = "#9fb2b2"
     let s:base2       = "#eee8d5"
     let s:base3       = "#fdf6e3"
     let s:yellow      = "#b58900"
@@ -609,7 +613,7 @@ else
     exe "hi! SpecialKey" .s:fmt_bold   .s:fg_base00 .s:bg_base02
     exe "hi! NonText"    .s:fmt_bold   .s:fg_base00 .s:bg_none
 endif
-exe "hi! StatusLine"     .s:fmt_none   .s:fg_magenta  .s:bg_base02 .s:fmt_revbb
+exe "hi! StatusLine"     .s:fmt_none   .s:fg_base1  .s:bg_base02 .s:fmt_revbb
 exe "hi! StatusLineNC"   .s:fmt_none   .s:fg_base00 .s:bg_base02 .s:fmt_revbb
 exe "hi! Visual"         .s:fmt_none   .s:fg_base01 .s:bg_base03 .s:fmt_revbb
 exe "hi! Directory"      .s:fmt_none   .s:fg_blue   .s:bg_none
